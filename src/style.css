@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: lightgrey;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    margin: auto;
+    height: 200px;
+    position: relative;
+}
+
+.white-keys {
+    height: 100%;
+}
+
+.white-keys kbd {
+    font-family: 'Roboto Mono', monospace;
+    display: inline-block;
+    width: 45px;
+    height: 100%;
+    background: white;
+    text-align: center;
+    padding-top: 150px;
+    border: 2px solid grey;
+    margin: 0 -2px;
+}
+
+#black-keys {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.black-keys {
+    height: 60%;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.black-keys kbd {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    display: inline-block;
+    width: 36px;
+    height: 100%;
+    background: black;
+    text-align: center;
+    padding-top: 70px;
+    position: absolute;
+}
+
+.black-keys kbd:nth-child(1) { left: 27px; }
+.black-keys kbd:nth-child(2) { left: 72px; }
+.black-keys kbd:nth-child(3) { left: 162px; }
+.black-keys kbd:nth-child(4) { left: 207px; }
+.black-keys kbd:nth-child(5) { left: 252px; }
